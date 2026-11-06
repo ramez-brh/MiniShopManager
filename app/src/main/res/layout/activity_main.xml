@@ -2,33 +2,51 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:background="@color/fond_catalogue"
     android:orientation="vertical"
-    android:padding="24dp">
+    android:padding="16dp">
 
-    <!-- Nom de l'application -->
+    <!-- En-tête : nom de l'application + bouton Suivant (TP1) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTitre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSuivant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_suivant" />
+    </LinearLayout>
+
     <TextView
-        android:id="@+id/tvTitre"
+        android:id="@+id/tvCatalogue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textColor="@color/primary"
-        android:textSize="28sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/titre_catalogue"
+        android:textColor="@color/texte"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/tvSousTitre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="@string/sous_titre"
-        android:textColor="@color/texte_secondaire" />
-
-    <!-- Bouton : Toast + navigation vers ProfileActivity -->
-    <Button
-        android:id="@+id/btnSuivant"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/btn_suivant" />
+    <!-- Catalogue : une ligne par produit (image + nom) -->
+    <ListView
+        android:id="@+id/listViewProduits"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@color/fond_catalogue"
+        android:dividerHeight="2dp" />
 </LinearLayout>

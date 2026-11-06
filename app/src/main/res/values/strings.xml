@@ -4,4 +4,5 @@
     <string name="btn_suivant">Suivant</string>
     <string name="sous_titre">Gestion de boutique en ligne</string>
     <string name="bienvenue_profil">Bienvenue sur l\'écran Profil !</string>
+    <string name="titre_catalogue">Catalogue des produits</string>
 </resources>
