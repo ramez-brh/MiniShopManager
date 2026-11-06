@@ -1,62 +1,49 @@
 package com.example.minishopmanager
 
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
-import android.widget.Button
 import android.widget.CheckBox
-import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.button.MaterialButton
+import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 
+/** Connexion avec « Se souvenir de moi » (SharedPreferences via la classe Session). */
 class LoginActivity : AppCompatActivity() {
-
-    companion object {
-        const val PREFS = "MiniShopPrefs"        // nom du fichier SharedPreferences
-        const val KEY_USER = "USERNAME"
-        const val KEY_REMEMBER = "REMEMBER"
-        const val EXTRA_USER = "username_key"    // clé de l'extra envoyé à MainActivity
-    }
-
-    private lateinit var prefs: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val etUsername = findViewById<EditText>(R.id.etUsername)
-        val etPassword = findViewById<EditText>(R.id.etPassword)
+        val session = Session(this)
+        val tilUser = findViewById<TextInputLayout>(R.id.tilUsername)
+        val tilPass = findViewById<TextInputLayout>(R.id.tilPassword)
+        val etUser = findViewById<TextInputEditText>(R.id.etUsername)
+        val etPass = findViewById<TextInputEditText>(R.id.etPassword)
         val cbRemember = findViewById<CheckBox>(R.id.cbRemember)
-        val btnLogin = findViewById<Button>(R.id.btnLogin)
+        val btnLogin = findViewById<MaterialButton>(R.id.btnLogin)
 
-        prefs = getSharedPreferences(PREFS, MODE_PRIVATE)
-
-        // Remember Me : à la reconnexion, le champ utilisateur est prérempli
-        etUsername.setText(prefs.getString(KEY_USER, ""))
-        cbRemember.isChecked = prefs.getBoolean(KEY_REMEMBER, false)
+        // Remember Me : champ prérempli à la reconnexion
+        etUser.setText(session.nomMemorise)
+        cbRemember.isChecked = session.seSouvenir
 
         btnLogin.setOnClickListener {
-            val username = etUsername.text.toString().trim()
-            if (username.isEmpty() || etPassword.text.isEmpty()) {
-                Toast.makeText(this, "Veuillez saisir le nom et le mot de passe", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
-            }
+            val nom = etUser.text?.toString()?.trim() ?: ""
+            val motDePasse = etPass.text?.toString() ?: ""
+            tilUser.error = null
+            tilPass.error = null
 
-            // Sauvegarder (ou effacer) les préférences selon la case
-            val editor = prefs.edit()
-            if (cbRemember.isChecked) {
-                editor.putString(KEY_USER, username)
-                editor.putBoolean(KEY_REMEMBER, true)
-            } else {
-                editor.clear()
+            when {
+                nom.length < 2 -> tilUser.error = getString(R.string.erreur_nom)
+                motDePasse.length < 4 -> tilPass.error = getString(R.string.erreur_mdp)
+                else -> {
+                    session.connecter(nom, cbRemember.isChecked)
+                    Toast.makeText(this, getString(R.string.bonjour_toast, nom), Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this, MainActivity::class.java))
+                    finish()
+                }
             }
-            editor.apply()
-
-            // Ouvrir le catalogue en transmettant le nom d'utilisateur
-            val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra(EXTRA_USER, username)
-            startActivity(intent)
-            finish()   // on ne revient pas au login avec le bouton Retour
         }
     }
 }

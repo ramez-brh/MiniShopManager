@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#0E6A78</color>
-    <color name="primary_dark">#0A4F59</color>
-    <color name="accent">#E9A23B</color>
-    <color name="fond_catalogue">#EAF4F2</color>
-    <color name="texte">#15211F</color>
-    <color name="texte_secondaire">#56696A</color>
+    <!-- Palette « Sidi Bou Saïd » : bleu des portes, blanc des façades, safran du jasmin -->
+    <color name="bleu_sbs">#1B4F9C</color>
+    <color name="bleu_nuit">#0F2E5E</color>
+    <color name="bleu_clair">#E8EFFA</color>
+    <color name="safran">#F4A62A</color>
+    <color name="safran_clair">#FFF1DA</color>
+    <color name="fond">#F5F7FB</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="encre">#14213D</color>
+    <color name="gris">#6B7A90</color>
+    <color name="bordure">#E1E6EF</color>
+    <color name="succes">#2E9E6A</color>
+    <color name="danger">#D64545</color>
     <color name="white">#FFFFFF</color>
+
+    <!-- Fonds pastel par catégorie -->
+    <color name="cat_telephonie">#DCE7FA</color>
+    <color name="cat_audio">#FCE9D2</color>
+    <color name="cat_montres">#DDF2E7</color>
+    <color name="cat_informatique">#E7E2FA</color>
+    <color name="cat_accessoires">#FADFDF</color>
+    <color name="cat_cosmetiques">#FBE3EF</color>
+
+    <!-- Anciennes couleurs (compatibilité) -->
+    <color name="primary">#1B4F9C</color>
+    <color name="primary_dark">#0F2E5E</color>
+    <color name="accent">#F4A62A</color>
+    <color name="fond_catalogue">#F5F7FB</color>
+    <color name="texte">#14213D</color>
+    <color name="texte_secondaire">#6B7A90</color>
 </resources>

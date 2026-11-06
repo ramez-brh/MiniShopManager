@@ -3,14 +3,17 @@
 
     <application
         android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
         android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.App">
 
-        <!-- TP3 : l'application démarre sur l'écran de connexion -->
+        <!-- Point d'entrée : écran de démarrage -->
         <activity
-            android:name=".LoginActivity"
-            android:exported="true">
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -18,11 +21,14 @@
         </activity>
 
         <activity
-            android:name=".MainActivity"
-            android:label="Catalogue" />
-
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".ProfileActivity"
-            android:label="Profil" />
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".PanierActivity" />
+        <activity android:name=".ConfirmationActivity" />
+        <activity android:name=".ProfileActivity" />
     </application>
 </manifest>

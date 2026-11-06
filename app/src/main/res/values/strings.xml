@@ -1,13 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MiniShopManager</string>
-    <string name="btn_suivant">Profil</string>
-    <string name="sous_titre">Gestion de boutique en ligne</string>
-    <string name="bienvenue_profil">Bienvenue sur l\'écran Profil !</string>
-    <string name="titre_catalogue">Catalogue des produits</string>
+    <string name="slogan">Le shopping aux couleurs de Sidi Bou Saïd</string>
+    <string name="version">TP Final · v2.0 · Ramez Barhoumi</string>
+
+    <!-- Login -->
+    <string name="connexion">Connexion</string>
+    <string name="connexion_sous_titre">Heureux de vous revoir. Connectez-vous pour continuer.</string>
     <string name="hint_utilisateur">Nom d\'utilisateur</string>
     <string name="hint_mot_de_passe">Mot de passe</string>
     <string name="se_souvenir">Se souvenir de moi</string>
-    <string name="btn_connexion">Connexion</string>
-    <string name="btn_vider">Vider le panier</string>
+    <string name="btn_connexion">Se connecter</string>
+    <string name="aide_demo">Démo : n\'importe quel nom et un mot de passe de 4 caractères minimum.</string>
+    <string name="erreur_nom">Saisissez au moins 2 caractères</string>
+    <string name="erreur_mdp">Le mot de passe doit contenir au moins 4 caractères</string>
+    <string name="bonjour_toast">Bonjour %1$s !</string>
+
+    <!-- Catalogue -->
+    <string name="bonjour_nom">Bonjour, %1$s</string>
+    <string name="invite">Invité</string>
+    <string name="question_accueil">Que cherchez-vous aujourd\'hui ?</string>
+    <string name="hint_recherche">Rechercher un produit, une catégorie…</string>
+    <string name="aucun_resultat">Aucun produit trouvé</string>
+    <string name="aucun_resultat_detail">Essayez un autre mot-clé ou une autre catégorie.</string>
+    <string name="reinitialiser">Réinitialiser les filtres</string>
+    <string name="ajoute_panier">%1$s ajouté au panier</string>
+    <string name="voir_panier">Voir</string>
+    <string name="remise">-%1$d %%</string>
+    <string-array name="options_tri">
+        <item>Pertinence</item>
+        <item>Prix croissant</item>
+        <item>Prix décroissant</item>
+        <item>Mieux notés</item>
+        <item>Promotions</item>
+    </string-array>
+    <plurals name="nb_produits">
+        <item quantity="one">%1$d produit</item>
+        <item quantity="other">%1$d produits</item>
+    </plurals>
+
+    <!-- Détail -->
+    <string name="description">Description</string>
+    <string name="quantite">Quantité</string>
+    <string name="total">Total</string>
+    <string name="ajouter_panier">Ajouter au panier</string>
+    <string name="ajoutes_panier">%1$d × %2$s ajouté(s) au panier</string>
+    <string name="note_avis">%1$s · avis clients</string>
+    <string name="en_stock">En stock</string>
+    <string name="stock_faible">Plus que %1$d en stock</string>
+    <string name="ajoute_favoris">Ajouté aux favoris</string>
+    <string name="retire_favoris">Retiré des favoris</string>
+    <string name="produit_introuvable">Produit introuvable</string>
+
+    <!-- Panier -->
+    <string name="mon_panier">Mon panier</string>
+    <string name="panier_vide">Votre panier est vide</string>
+    <string name="panier_vide_detail">Parcourez le catalogue et ajoutez vos coups de cœur.</string>
+    <string name="decouvrir">Découvrir le catalogue</string>
+    <string name="sous_total">Sous-total</string>
+    <string name="livraison">Livraison</string>
+    <string name="offerte">Offerte</string>
+    <string name="astuce_livraison">Plus que %1$s pour la livraison offerte</string>
+    <string name="livraison_offerte">Livraison offerte sur cette commande</string>
+    <string name="commander">Commander</string>
+    <string name="prix_unitaire">%1$s / unité</string>
+    <string name="supprime_panier">%1$s retiré du panier</string>
+    <string name="annuler">Annuler</string>
+    <string name="confirmer">Confirmer</string>
+    <string name="confirmer_commande">Confirmer la commande</string>
+    <string name="message_commande">Vous allez commander %1$d article(s) pour un total de %2$s.</string>
+    <plurals name="nb_articles">
+        <item quantity="one">%1$d article</item>
+        <item quantity="other">%1$d articles</item>
+    </plurals>
+
+    <!-- Confirmation -->
+    <string name="commande_confirmee">Commande confirmée !</string>
+    <string name="commande_merci">Merci pour votre confiance. Vous recevrez un SMS dès l\'expédition.</string>
+    <string name="numero_commande">N° de commande</string>
+    <string name="montant">Montant</string>
+    <string name="livraison_prevue">Livraison prévue</string>
+    <string name="retour_catalogue">Retour au catalogue</string>
+    <string name="voir_commandes">Voir mes commandes</string>
+
+    <!-- Profil -->
+    <string name="mon_profil">Mon profil</string>
+    <string name="bienvenue_profil">Bienvenue sur l\'écran Profil !</string>
+    <string name="commandes">Commandes</string>
+    <string name="depense">Dépensé</string>
+    <string name="favoris">Favoris</string>
+    <string name="historique">Historique des commandes</string>
+    <string name="aucune_commande">Aucune commande pour le moment.</string>
+    <string name="deconnexion">Se déconnecter</string>
+    <string name="message_deconnexion">Vous devrez vous reconnecter pour accéder au catalogue.</string>
 </resources>

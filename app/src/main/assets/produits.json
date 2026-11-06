@@ -1,10 +1,147 @@
 {
   "produits": [
-    {"nom": "Téléphone",        "prix": 850, "categorie": "Téléphonie",  "image": "ic_telephone"},
-    {"nom": "Casque Bluetooth", "prix": 120, "categorie": "Audio",       "image": "ic_casque"},
-    {"nom": "Montre connectée", "prix": 250, "categorie": "Montres",     "image": "ic_montre"},
-    {"nom": "Chargeur USB",     "prix": 35,  "categorie": "Accessoires", "image": "ic_chargeur"},
-    {"nom": "Sac à dos",        "prix": 90,  "categorie": "Accessoires", "image": "ic_accessoires"},
-    {"nom": "Parfum",           "prix": 140, "categorie": "Cosmétiques", "image": "ic_cosmetiques"}
+    {
+      "id": 1,
+      "nom": "Smartphone Nova X",
+      "prix": 1290,
+      "ancienPrix": 1450,
+      "categorie": "Téléphonie",
+      "image": "ic_telephone",
+      "note": 4.7,
+      "stock": 12,
+      "description": "Écran AMOLED 6,7 pouces, triple capteur photo 108 Mpx et batterie 5000 mAh qui tient une journée et demie. Livré avec sa coque de protection."
+    },
+    {
+      "id": 2,
+      "nom": "Tablette Tab S 11\"",
+      "prix": 980,
+      "ancienPrix": 0,
+      "categorie": "Téléphonie",
+      "image": "ic_tablette",
+      "note": 4.5,
+      "stock": 8,
+      "description": "Grand écran 11 pouces idéal pour réviser, regarder des séries ou prendre des notes avec le stylet compatible."
+    },
+    {
+      "id": 3,
+      "nom": "Casque Bluetooth Pulse",
+      "prix": 189,
+      "ancienPrix": 229,
+      "categorie": "Audio",
+      "image": "ic_casque",
+      "note": 4.6,
+      "stock": 20,
+      "description": "Réduction de bruit active, 40 heures d'autonomie et coussinets à mémoire de forme pour un confort toute la journée."
+    },
+    {
+      "id": 4,
+      "nom": "Écouteurs sans fil Air",
+      "prix": 149,
+      "ancienPrix": 0,
+      "categorie": "Audio",
+      "image": "ic_ecouteurs",
+      "note": 4.4,
+      "stock": 30,
+      "description": "Écouteurs intra-auriculaires légers, étanches IPX5, avec boîtier de recharge rapide : 10 minutes pour 2 heures d'écoute."
+    },
+    {
+      "id": 5,
+      "nom": "Enceinte portable Boom",
+      "prix": 219,
+      "ancienPrix": 0,
+      "categorie": "Audio",
+      "image": "ic_enceinte",
+      "note": 4.3,
+      "stock": 4,
+      "description": "Son 360° puissant, basses profondes et 18 heures d'autonomie. Parfaite pour la plage de La Marsa."
+    },
+    {
+      "id": 6,
+      "nom": "Montre connectée Fit 2",
+      "prix": 259,
+      "ancienPrix": 299,
+      "categorie": "Montres",
+      "image": "ic_montre",
+      "note": 4.5,
+      "stock": 15,
+      "description": "Suivi du sommeil, du rythme cardiaque et de 100 sports. Notifications du téléphone et 10 jours d'autonomie."
+    },
+    {
+      "id": 7,
+      "nom": "Ordinateur portable Book 14",
+      "prix": 2390,
+      "ancienPrix": 2590,
+      "categorie": "Informatique",
+      "image": "ic_laptop",
+      "note": 4.8,
+      "stock": 5,
+      "description": "Processeur 8 cœurs, 16 Go de RAM et SSD 512 Go dans un châssis aluminium de 1,3 kg. Idéal pour le développement mobile."
+    },
+    {
+      "id": 8,
+      "nom": "Souris sans fil Glide",
+      "prix": 59,
+      "ancienPrix": 0,
+      "categorie": "Informatique",
+      "image": "ic_souris",
+      "note": 4.2,
+      "stock": 40,
+      "description": "Souris silencieuse et ergonomique, connexion Bluetooth ou récepteur USB, pile incluse."
+    },
+    {
+      "id": 9,
+      "nom": "Chargeur rapide 65 W",
+      "prix": 79,
+      "ancienPrix": 0,
+      "categorie": "Accessoires",
+      "image": "ic_chargeur",
+      "note": 4.4,
+      "stock": 25,
+      "description": "Charge votre téléphone à 50 % en 20 minutes. Compatible USB-C Power Delivery, ordinateurs portables inclus."
+    },
+    {
+      "id": 10,
+      "nom": "Batterie externe 20 000 mAh",
+      "prix": 99,
+      "ancienPrix": 119,
+      "categorie": "Accessoires",
+      "image": "ic_powerbank",
+      "note": 4.6,
+      "stock": 18,
+      "description": "Jusqu'à 4 recharges complètes de smartphone, 2 ports USB et un indicateur de niveau à LED."
+    },
+    {
+      "id": 11,
+      "nom": "Sac à dos urbain",
+      "prix": 129,
+      "ancienPrix": 0,
+      "categorie": "Accessoires",
+      "image": "ic_accessoires",
+      "note": 4.1,
+      "stock": 10,
+      "description": "Compartiment rembourré pour ordinateur 15 pouces, tissu déperlant et port USB intégré."
+    },
+    {
+      "id": 12,
+      "nom": "Parfum Jasmin de Carthage",
+      "prix": 145,
+      "ancienPrix": 175,
+      "categorie": "Cosmétiques",
+      "image": "ic_cosmetiques",
+      "note": 4.9,
+      "stock": 3,
+      "description": "Eau de parfum aux notes de jasmin tunisien et de fleur d'oranger, flacon de 50 ml."
+    },
+    {
+      "id": 13,
+      "nom": "Crème hydratante à l'argan",
+      "prix": 65,
+      "ancienPrix": 0,
+      "categorie": "Cosmétiques",
+      "image": "ic_creme",
+      "note": 4.5,
+      "stock": 22,
+      "description": "Crème visage nourrissante à l'huile d'argan et à l'aloe vera, pour tous types de peau."
+    }
   ]
 }
