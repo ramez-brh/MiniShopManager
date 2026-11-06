@@ -7,9 +7,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App">
 
-        <!-- Activity principale : point d'entrée de l'application (MAIN + LAUNCHER) -->
+        <!-- TP3 : l'application démarre sur l'écran de connexion -->
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
 
-        <!-- Deuxième écran, ouvert par un Intent explicite -->
+        <activity
+            android:name=".MainActivity"
+            android:label="Catalogue" />
+
         <activity
             android:name=".ProfileActivity"
             android:label="Profil" />

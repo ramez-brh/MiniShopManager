@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MiniShopManager</string>
-    <string name="btn_suivant">Suivant</string>
+    <string name="btn_suivant">Profil</string>
     <string name="sous_titre">Gestion de boutique en ligne</string>
     <string name="bienvenue_profil">Bienvenue sur l\'écran Profil !</string>
     <string name="titre_catalogue">Catalogue des produits</string>
+    <string name="hint_utilisateur">Nom d\'utilisateur</string>
+    <string name="hint_mot_de_passe">Mot de passe</string>
+    <string name="se_souvenir">Se souvenir de moi</string>
+    <string name="btn_connexion">Connexion</string>
+    <string name="btn_vider">Vider le panier</string>
 </resources>

@@ -1,0 +1,10 @@
+{
+  "produits": [
+    {"nom": "Téléphone",        "prix": 850, "categorie": "Téléphonie",  "image": "ic_telephone"},
+    {"nom": "Casque Bluetooth", "prix": 120, "categorie": "Audio",       "image": "ic_casque"},
+    {"nom": "Montre connectée", "prix": 250, "categorie": "Montres",     "image": "ic_montre"},
+    {"nom": "Chargeur USB",     "prix": 35,  "categorie": "Accessoires", "image": "ic_chargeur"},
+    {"nom": "Sac à dos",        "prix": 90,  "categorie": "Accessoires", "image": "ic_accessoires"},
+    {"nom": "Parfum",           "prix": 140, "categorie": "Cosmétiques", "image": "ic_cosmetiques"}
+  ]
+}

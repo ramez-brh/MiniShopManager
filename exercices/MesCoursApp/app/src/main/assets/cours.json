@@ -1,0 +1,8 @@
+{
+  "cours": [
+    {"nom": "Programmation mobile", "coef": 3},
+    {"nom": "Réseaux", "coef": 2},
+    {"nom": "Base de données", "coef": 2},
+    {"nom": "Développement web", "coef": 3}
+  ]
+}
