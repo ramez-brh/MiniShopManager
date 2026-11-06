@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MiniShopManager</string>
+    <string name="btn_suivant">Suivant</string>
+    <string name="sous_titre">Gestion de boutique en ligne</string>
+    <string name="bienvenue_profil">Bienvenue sur l\'écran Profil !</string>
 </resources>

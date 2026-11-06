@@ -8,6 +8,7 @@ Travaux pratiques Android (Kotlin, layouts XML) · **L3-GTIC, ISET'COM** · Ann�
 | TP | Thème | Ce qui est réalisé | Explications |
 |----|-------|--------------------|--------------|
 | **TP0** | Environnement + dépôt GitHub | Projet Android Studio, `.gitignore`, wrapper Gradle | [docs/TP0.md](docs/TP0.md) |
+| **TP1** | Premier projet Android | Accueil, Toast, logs du cycle de vie, Intent → `ProfileActivity` | [docs/TP1.md](docs/TP1.md) |
 
 Chaque TP correspond à **un commit** (`git log --oneline`) et à un **tag** (`tp0`, `tp1`, …) :
 `git checkout tp2` permet de revoir le projet exactement tel qu'il était à la fin du TP2.
