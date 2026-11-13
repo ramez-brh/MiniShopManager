@@ -1,0 +1,15 @@
+# Analyse statique : règles recommandées pour un projet Flutter
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**
+linter:
+  rules:
+    - prefer_const_constructors
+    - prefer_const_literals_to_create_immutables
+    - use_key_in_widget_constructors
