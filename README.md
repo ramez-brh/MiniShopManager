@@ -17,9 +17,10 @@ Travaux pratiques Android (Kotlin, layouts XML) · **L3-GTIC, ISET'COM** · Ann�
 | **TP2** | Catalogue statique | Exercice `exercices/ListePays` + catalogue MiniShop (ListView, images, fond) | [docs/TP2.md](docs/TP2.md) |
 | **TP3** | Catalogue dynamique | Exercice `exercices/MesCoursApp` + Login Remember Me, JSON, panier SQLite | [docs/TP3.md](docs/TP3.md) |
 | **TP4** | Premiers pas avec Flutter | `tp4-flutter/hello_world` (Hello World) + exercice `tp4-flutter/compteur` (StatefulWidget, setState) | [docs/TP4.md](docs/TP4.md) |
+| **TP5** | Navigation et listes Flutter | Exercice `tp5-flutter/navigation` (push/pop) + MiniShop en Flutter `tp5-flutter/minishop_flutter` (catalogue, produits ajoutés) | [docs/TP5.md](docs/TP5.md) |
 | **TP Final** | MiniShopManager Pro | 7 écrans, recherche, filtres, tri, panier avec quantités, commandes, favoris, profil, nouvelle identité visuelle | [docs/TP_FINAL.md](docs/TP_FINAL.md) |
 
-Chaque TP correspond à **un commit** et à un **tag** (`tp0`, `tp1`, `tp2`, `tp3`, `tp-final`, `tp4`) :
+Chaque TP correspond à **un commit** et à un **tag** (`tp0`, `tp1`, `tp2`, `tp3`, `tp-final`, `tp4`, `tp5`) :
 `git checkout tp2` permet de revoir le projet exactement tel qu'il était à la fin du TP2.
 
 ## Fonctionnalités du TP Final
