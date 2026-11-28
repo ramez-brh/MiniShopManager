@@ -44,7 +44,8 @@ class DetailActivity : AppCompatActivity() {
         // ----- En-tête coloré selon la catégorie -----
         findViewById<View>(R.id.enteteImage).backgroundTintList =
             ColorStateList.valueOf(ContextCompat.getColor(this, Catalogue.couleur(produit.categorie)))
-        findViewById<ImageView>(R.id.ivProduit).setImageResource(Catalogue.image(produit.image))
+        findViewById<ImageView>(R.id.ivProduit).setImageResource(Catalogue.photo(produit.image))
+        findViewById<View>(R.id.enteteImage).clipToOutline = true   // coins arrondis du bas
         findViewById<ImageButton>(R.id.btnRetour).setOnClickListener { finish() }
 
         val btnFavori = findViewById<ImageButton>(R.id.btnFavori)

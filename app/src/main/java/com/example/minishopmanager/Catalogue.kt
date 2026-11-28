@@ -54,6 +54,23 @@ object Catalogue {
         else -> R.drawable.ic_accessoires
     }
 
+    /** Photo réelle du produit (res/drawable-nodpi/photo_*.jpg, photos libres de droits Pexels). */
+    fun photo(nom: String): Int = when (nom) {
+        "ic_telephone" -> R.drawable.photo_telephone
+        "ic_tablette" -> R.drawable.photo_tablette
+        "ic_casque" -> R.drawable.photo_casque
+        "ic_ecouteurs" -> R.drawable.photo_ecouteurs
+        "ic_enceinte" -> R.drawable.photo_enceinte
+        "ic_montre" -> R.drawable.photo_montre
+        "ic_laptop" -> R.drawable.photo_laptop
+        "ic_souris" -> R.drawable.photo_souris
+        "ic_chargeur" -> R.drawable.photo_chargeur
+        "ic_powerbank" -> R.drawable.photo_powerbank
+        "ic_cosmetiques" -> R.drawable.photo_parfum
+        "ic_creme" -> R.drawable.photo_creme
+        else -> R.drawable.photo_sac
+    }
+
     /** Couleur de fond (pastel) associée à chaque catégorie. */
     fun couleur(categorie: String): Int = when (categorie) {
         "Téléphonie" -> R.color.cat_telephonie

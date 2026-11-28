@@ -37,7 +37,8 @@ class PanierAdapter(
 
         val boite = vue.findViewById<View>(R.id.boiteImage)
         boite.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(context, Catalogue.couleur(ligne.categorie)))
-        vue.findViewById<ImageView>(R.id.ivProduit).setImageResource(Catalogue.image(ligne.image))
+        vue.findViewById<ImageView>(R.id.ivProduit).setImageResource(Catalogue.photo(ligne.image))
+        boite.clipToOutline = true
         vue.findViewById<TextView>(R.id.tvNom).text = ligne.nom
         vue.findViewById<TextView>(R.id.tvPrixUnitaire).text =
             context.getString(R.string.prix_unitaire, Format.prix(ligne.prix))

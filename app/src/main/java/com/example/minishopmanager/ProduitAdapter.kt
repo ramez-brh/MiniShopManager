@@ -41,7 +41,8 @@ class ProduitAdapter(
         val h = vue.tag as? Holder ?: Holder(vue).also { vue.tag = it }
         val p = produits[position]
 
-        h.image.setImageResource(Catalogue.image(p.image))
+        h.image.setImageResource(Catalogue.photo(p.image))
+        h.boite.clipToOutline = true   // la photo suit les coins arrondis de la boîte
         h.boite.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(context, Catalogue.couleur(p.categorie)))
         h.categorie.text = p.categorie.uppercase()
         h.nom.text = p.nom
